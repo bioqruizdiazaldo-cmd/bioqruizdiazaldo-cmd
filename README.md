@@ -33,16 +33,17 @@ Documentación completa, sanitizada y verificable de un sistema real.
 |---|---|
 | Agentes en producción | 1 orquestador + 15 subagentes |
 | Workflows n8n registrados / activos | 217 / 25 |
-| Migraciones SQL versionadas | 33+ |
-| Casos de test automatizados | 554 |
+| Migraciones SQL versionadas | 40+ |
+| Casos de test automatizados | 606 |
 | Endpoints de API | 60+, ninguno `DELETE` |
 | Herramientas MCP | 22, en 4 scopes OAuth |
 
 **Adentro vas a encontrar:**
 
-- Un [manual de usuario](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/00-manual-de-usuario) de 9 capítulos.
+- Un [manual de usuario](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/00-manual-de-usuario) de 10 capítulos, incluido el del agente fiscal.
 - Un [desglose de criterios de decisión](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/02-desglose-tecnico): cuándo va en SQL, cuándo en n8n, cuándo amerita un subagente, cuándo un MCP, cuándo una API propia, cuándo una pantalla.
-- [9 ADRs](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/04-decisiones), incluido el de un buscador que **no** se publicó porque dio 2 de 7 pruebas.
+- [13 ADRs](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/04-decisiones), incluido el de un buscador que **no** se publicó porque dio 2 de 7 pruebas.
+- Un [agente fiscal](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/systems/praxia-agente-fiscal) que propone y nunca aplica: no porque se porte bien, sino porque su credencial recibe 403 al intentar aprobar.
 - [Runbooks e incidentes reales](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/06-runbooks): un PDF de 21,9 MB que rompió el pipeline, y cinco días de drift entre repositorio y servidor.
 - Un [método de trabajo con agentes de IA](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/05-gobernanza) — SDLC, plantillas y checklists — reutilizable en cualquier equipo. También [en inglés](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/05-gobernanza/en).
 
