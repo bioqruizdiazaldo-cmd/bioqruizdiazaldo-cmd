@@ -1,86 +1,80 @@
-<h1 align="center">Aldo Cáceres Ruiz Díaz</h1>
+# Bioq. Aldo J. Cáceres Ruiz Díaz
 
-<p align="center">
-  <strong>Construyo sistemas de agentes de IA que corren en producción.</strong><br>
-  Sin escribir código a mano — con método, evidencia y control humano.
-</p>
+## Headline
 
-<p align="center">
-  <a href="https://github.com/bioqruizdiazaldo-cmd/praxia-ops">PraxIA Ops</a> ·
-  Microbiología, bioseguridad y gobernanza QBRN ·
-  Argentina 🇦🇷
-</p>
+Biochemist and virologist at UOCCB, ANLIS "Dr. Carlos G. Malbrán" (Ministry of Health, Argentina). CBRN (QBRN) defense, disarmament, and biological-weapons non-proliferation. Artificial intelligence and bioinformatics.
 
----
+## Summary
 
-## Qué hago
+I am a biochemist and virology specialist. My post is at UOCCB, ANLIS "Dr. Carlos G. Malbrán", in Argentina’s Ministry of Health, in biosafety, biosecurity, biological containment, and CBRN (QBRN: chemical, biological, radiological, and nuclear).
 
-Vengo de la ciencia: microbiología, infectología, bioseguridad y gobernanza QBRN-CBRN. En julio de 2026 empecé a construir **PraxIA Ops**, una plataforma de agentes de IA operativos. En 22 días pasó de un primer workflow a un sistema 24/7 con orquestador, 15 subagentes, memoria persistente en PostgreSQL, aprobación humana en las acciones consecuentes y despliegue con rollback.
+The second pillar, alongside artificial intelligence and bioinformatics, is disarmament and international security: CBRN defense, non-proliferation of biological weapons under the Biological Weapons Convention (BWC), disarmament, and arms control. I am aiming at organizations in that field, including the Organisation for the Prohibition of Chemical Weapons (OPCW) and the Stockholm International Peace Research Institute (SIPRI). Current affiliation remains UOCCB, ANLIS "Dr. Carlos G. Malbrán".
 
-No escribo la aplicación línea por línea. **Diseño la arquitectura, escribo los contratos, defino las invariantes en la base de datos, y dirijo agentes de código que implementan bajo supervisión.** Esa es la disciplina: el modelo propone, la evidencia decide, la persona aprueba.
+In parallel I am building applied depth in artificial intelligence and bioinformatics. I am pursuing a Master’s in Artificial Intelligence at UTAMED and a Master’s in Bioinformatics at the Universidad Internacional de Valencia (VIU). The applied focus is machine learning for genomics and biosecurity, reproducible bioinformatics pipelines, and viral genomic surveillance that can be inspected and tested.
 
-Lo que traigo de la bioseguridad resulta que se aplica igual acá: trazabilidad, control de acceso, contención, procedimientos escritos, y la costumbre de asumir que las cosas van a fallar.
+## Focus areas
 
----
+**CBRN, disarmament, and international security**
 
-## Proyecto principal
+- CBRN (QBRN) defense
+- Biological weapons non-proliferation and the Biological Weapons Convention (BWC)
+- Disarmament, arms control, and international security
+- Professional aim: organizations working in this field, including the OPCW and SIPRI
 
-### [praxia-ops](https://github.com/bioqruizdiazaldo-cmd/praxia-ops) — plataforma de agentes de IA en producción
+**Biosafety and the life sciences**
 
-Documentación completa, sanitizada y verificable de un sistema real.
+- Biosafety, biosecurity, and biological containment
+- Virology
 
-| | |
-|---|---|
-| Agentes en producción | 1 orquestador + 15 subagentes |
-| Workflows n8n registrados / activos | 217 / 25 |
-| Migraciones SQL versionadas | 40+ |
-| Casos de test automatizados | 606 |
-| Endpoints de API | 60+, ninguno `DELETE` |
-| Herramientas MCP | 22, en 4 scopes OAuth |
+**Artificial intelligence and bioinformatics**
 
-**Adentro vas a encontrar:**
+- Machine learning for genomics and biosecurity
+- Bioinformatics pipelines
+- Viral genomic surveillance
 
-- Un [manual de usuario](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/00-manual-de-usuario) de 10 capítulos, incluido el del agente fiscal.
-- Un [desglose de criterios de decisión](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/02-desglose-tecnico): cuándo va en SQL, cuándo en n8n, cuándo amerita un subagente, cuándo un MCP, cuándo una API propia, cuándo una pantalla.
-- [13 ADRs](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/04-decisiones), incluido el de un buscador que **no** se publicó porque dio 2 de 7 pruebas.
-- Un [agente fiscal](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/systems/praxia-agente-fiscal) que propone y nunca aplica: no porque se porte bien, sino porque su credencial recibe 403 al intentar aprobar.
-- [Runbooks e incidentes reales](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/06-runbooks): un PDF de 21,9 MB que rompió el pipeline, y cinco días de drift entre repositorio y servidor.
-- Un [método de trabajo con agentes de IA](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/05-gobernanza) — SDLC, plantillas y checklists — reutilizable en cualquier equipo. También [en inglés](https://github.com/bioqruizdiazaldo-cmd/praxia-ops/tree/main/docs/05-gobernanza/en).
+## Technical stack
 
----
+**Analysis and scientific computing**
 
-## Stack
+- Python
+- Bash
+- Machine-learning libraries
+- Bioinformatics tools
 
-**Orquestación** n8n self-hosted · Model Context Protocol (MCP) · OpenAI (chat, Whisper, TTS)
-**Datos** PostgreSQL 16 · SQL como contrato: triggers, funciones, vistas, roles sin `DELETE`
-**Runtime** Docker · Traefik + TLS · VPS propio · backups con verificación y rollback
-**Backend** Node.js ESM · OpenAPI 3.1 · OAuth 2.0 + PKCE
-**Interfaces** Telegram (texto, voz, imagen, PDF) · dashboard web · MCP para agentes externos
-**Integraciones** Gmail · Google Calendar, Drive y Sheets · Tavily · Europe PMC · OpenAlex · RSS
-**Método** ADRs · manifiestos de workflow · canary · post-mortems blameless · `node --test` + PGlite
+**Production agent systems**, as published in [PraxIA Ops](https://github.com/bioqruizdiazaldo-cmd/praxia-ops)
 
----
+- PostgreSQL
+- n8n and the Model Context Protocol
+- Node.js
+- Docker
 
-## Cómo trabajo
+## Featured projects
 
-> **Sin orden no hay sistema, solo experimentos.**
+### [PraxIA Ops](https://github.com/bioqruizdiazaldo-cmd/praxia-ops)
 
-1. **Planificación antes que implementación.** Siempre. El error caro casi nunca es técnico: es de secuencia.
-2. **Inspección no equivale a autorización de cambio.** Un agente puede leer todo; escribir necesita permiso explícito.
-3. **La ausencia de dato no se convierte en un dato inventado.** Si no hay evidencia, se declara el vacío.
-4. **La aprobación humana no es un trámite.** Mandar un mail, gastar, borrar o publicar pasan por una persona.
-5. **Todo despliegue tiene rollback verificado.** Si no se puede volver atrás, no se sube.
+PraxIA Ops is a self-hosted agent platform put into production between July and August 2026. An n8n orchestrator delegates to specialised subagents. Memory is stored in PostgreSQL. Consequential actions wait for human approval. In the finance module there is no physical-delete route, and the credential that drafts a fiscal proposal receives HTTP 403 on the route that would approve it.
 
----
+The public repository, under the Apache 2.0 licence, is the sanitised record: architecture, thirteen architecture decision records, runbooks and post-mortems, governance templates, synthetic SQL, and a zero-dependency Node.js toolkit that exports, normalises, and secret-scans n8n workflows. That toolkit has 65 tests and runs in continuous integration. The live runtime, credentials, and the finance test suite stay on private infrastructure. A snapshot dated 6 August 2026 reported one orchestrator and 15 subagents, 217 registered workflows of which 25 were active, and 606 finance tests on a private harness. Those figures describe the private system on that date. A clone of the repository runs the workflow toolkit and applies the synthetic SQL.
 
-## Sobre publicar los fracasos
+The documented scope is personal operations: messaging, mail, calendar, literature search (Europe PMC and OpenAlex), and personal finance. Memory retrieval is PostgreSQL full-text search. Architecture decision 003 records why a vector index was deferred at the volume then in use.
 
-En [praxia-ops](https://github.com/bioqruizdiazaldo-cmd/praxia-ops) están documentados los incidentes, el drift, los 73 workflows de laboratorio que quedaron conviviendo con producción y el buscador que no pasó la validación.
+### AI-driven viral genomic surveillance pipeline — coming soon
 
-Están ahí a propósito. Un sistema que solo muestra sus éxitos no está documentado: está publicitado.
+Placeholder. No repository yet. The intended work is a pipeline that applies machine learning to viral genome data for surveillance.
 
----
+### Biosecurity risk-assessment tool — coming soon
 
-<p align="center">
-  <sub>Toda la documentación pública está sanitizada. El runtime, las credenciales y los datos reales viven en infraestructura privada.</sub>
-</p>
+Placeholder. No repository yet. The intended work is a tool for structured biosecurity risk assessment.
+
+## Education and certifications
+
+- Master’s in Artificial Intelligence, UTAMED — in progress
+- Master’s in Bioinformatics, Universidad Internacional de Valencia (VIU) — in progress
+- Biochemist (Bioquímico)
+
+Virology, biosafety, biosecurity, biological containment, and CBRN (QBRN) are my practice at UOCCB, ANLIS "Dr. Carlos G. Malbrán".
+
+## Contact
+
+- LinkedIn: [https://www.linkedin.com/in/PLACEHOLDER](https://www.linkedin.com/in/PLACEHOLDER) — replace `PLACEHOLDER` with the public profile URL
+- GitHub: [github.com/bioqruizdiazaldo-cmd](https://github.com/bioqruizdiazaldo-cmd)
